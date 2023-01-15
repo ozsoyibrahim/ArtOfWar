@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    font-family: 'Open Sans';
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+#entry_sec {
+    background-image: url(images/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.5s, text-shadow 0.5s;
+
+}
+
+header nav a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 3px 5px #ff0, 0px 0px 10px #f00;
+    transition: 0.5s;
+}
+
+.entry_text {
+    width: 78%;
+    margin: 100px auto;
+}
+
+.entry_text h1 {
+    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.entry_text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Hakkında kısmı */
+
+#about {
+    background-color: black;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+.about_text {
+    max-width: 600px;
+
+}
+
+.about_text h1 {
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.about_text p {
+    font-family: 'Poppins';
+    margin-top: 50px;
+}
+
+#about img {
+    max-width: 512px;
+    max-height: 512px;
+    transition: 0.8s;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+/* Battle alanı*/
+
+#battle {
+    background-image: radial-gradient(rgba(30, 30, 30, 0.35) 0%, rgba(0, 0, 0, 0.96) 40%), url(images/savas1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading {}
+
+.heading h5 {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px;
+
+}
+
+.heading h1 {
+    font-family: 'Inter', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.boxes {
+    width: 650px;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 160px;
+    border: 1px solid rgb(56, 56, 56);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box:last-child {
+    width: 610px;
+}
+
+.box h1 {
+    color: #f00;
+    font-size: 20px;
+}
+
+.box p {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Fikirler Alanı*/
+
+#opinions {
+    background-image: url(images/sec-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.opinions_text {
+    max-width: 450px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.opinions_text h1 {
+    font-size: 60px;
+
+}
+
+.opinions_text p {
+    font-size: 18px;
+    text-align: justify;
+
+}
+
+.opinions_text button {
+    padding: 10px;
+    background-color: #f00;
+    font-weight: 800;
+    border-radius: 10px;
+    transition: color 0.5s;
+    margin-top: 40px;
+    width: 180px;
+
+}
+
+.opinions_text button:hover {
+    color: #ff0;
+    background-color: rgb(60, 60, 60);
+    transition: 0.5s;
+
+}
+
+.cards {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.card {
+    width: 450px;
+    background-color: rgb(30, 30, 30);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+
+}
+
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+
+.user {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user_info h1 {
+    color: #f00;
+}
+
+.grey {
+    color: grey;
+}
+
+@media (max-width: 1100px) {
+
+    header img {
+        width: 120px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    header nav {
+        gap: 15px;
+
+    }
+
+    header nav a {
+        color: black;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    header nav a:hover {
+        text-shadow: 2px 3px 5px rgb(50, 255, 0), 0px 0px 10px #f00;
+    }
+
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about_text {
+        max-width: 100%;
+    }
+
+    .about_text h1 {
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .about_text p {
+        margin: 10px auto;
+        text-align: justify;
+    }
+
+    .about_text p>span {
+        border-bottom: 1px solid #f00;
+    }
+
+    #about img {
+        width: 350px;
+    }
+
+    .heading h5 {
+        font-size: 16px;
+        padding: 30px 20px 20px 20px;
+
+    }
+
+    .heading h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .boxes {
+        margin: 30px auto;
+    }
+
+    #opinions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card:nth-child(2) {
+        align-self: center;
+    }
+
+    .cards {
+        gap: 5px;
+        align-items: center;
+    }
+
+    .opinions_text {
+        padding: 5px;
+    }
+
+    .opinions_text h1 {
+        font-size: 20px;
+
+    }
+
+    .opinions_text p {
+        font-size: 12px;
+
+    }
+
+    .opinions_text button {
+        margin: 10px 0;
+
+    }
+}
