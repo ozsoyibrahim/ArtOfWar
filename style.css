@@ -12,14 +12,14 @@ html {
 
 body {
     color: white;
-    font-family: 'Open Sans';
-    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 
 section {
     height: 100vh;
-    /* border: 1px solid red; */
 }
+
+/*Entry Section*/
 
 #entry_sec {
     background-image: url(images/main.jpg);
@@ -28,36 +28,34 @@ section {
     background-position: center;
 }
 
-header {
+.entry_head {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
 }
 
-header img {
+.entry_head img {
     width: 150px;
 }
 
-header nav {
+.entry_head nav {
     display: flex;
-    gap: 40px;
-
+    gap: 30px;
 }
 
-header nav a {
-    color: #fff;
+.entry_head nav a {
     text-decoration: none;
+    color: white;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 800;
     transition: color 0.5s, text-shadow 0.5s;
-
 }
 
-header nav a:hover {
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 3px 5px #ff0, 0px 0px 10px #f00;
+.entry_head nav a:hover {
+    color: rgb(20, 20, 20);
+    text-shadow:2px 3px 5px #ff0, 0px 0px 10px #f00;
     transition: 0.5s;
 }
 
@@ -67,86 +65,155 @@ header nav a:hover {
 }
 
 .entry_text h1 {
-    font-family: 'Open Sans', 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;    
     font-size: 60px;
-    line-height: 75px;
+    font-weight: 800;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .entry_text p {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    font-weight: 500;
     text-align: center;
 }
 
-/* Hakkında kısmı */
+/*About Section*/
 
-#about {
+#about_sec {
     background-color: black;
     display: flex;
-    gap: 30px;
+    gap: 30px; 
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
+    position: relative;
 }
 
+.about_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.about_head nav {
+    display: flex;
+    gap: 30px;
+}
+
+.about_head nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.5s, text-shadow 0.5s;
+    position: absolute;
+    right: 30px;  
+    top: 20px;  
+}
+
+.about_head nav a:first-child {
+    right: 100px;
+    top: 20px;
+}
+
+.about_head nav a:hover {
+    color: rgb(20, 20, 20);
+    text-shadow:2px 3px 5px #ff0, 0px 0px 10px #f00;
+    transition: 0.5s;
+}
 .about_text {
     max-width: 600px;
-
 }
 
-.about_text h1 {
-    font-size: 75px;
+.about_text h1{
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 60px;
     line-height: 80px;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .about_text p {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     margin-top: 50px;
 }
 
-#about img {
+#about_sec img {
     max-width: 512px;
     max-height: 512px;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
-#about img:hover {
+#about_sec img:hover {
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
-/* Battle alanı*/
+/*Battle Section*/
 
-#battle {
+#battle_sec {
     background-image: radial-gradient(rgba(30, 30, 30, 0.35) 0%, rgba(0, 0, 0, 0.96) 40%), url(images/savas1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 
-.heading {}
+.battle_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
 
-.heading h5 {
-    font-family: 'Roboto', 'Times New Roman', Times, serif;
+.battle_head nav {
+    display: flex;
+    gap: 30px;
+}
+
+.battle_head nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.5s, text-shadow 0.5s;
+    position: absolute;
+    right: 30px;  
+    top: 20px;  
+}
+
+.battle_head nav a:first-child {
+    right: 100px;
+    top: 20px;
+}
+
+.battle_head nav a:hover {
+    color: rgb(20, 20, 20);
+    text-shadow:2px 3px 5px #ff0, 0px 0px 10px #f00;
+    transition: 0.5s;
+}
+
+.battle_text h5 {
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     text-align: center;
-    text-transform: uppercase;
-    padding: 30px;
-
 }
 
-.heading h1 {
-    font-family: 'Inter', 'Times New Roman', Times, serif;
-    font-size: 50px;
+.battle_text h1 {
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 60px;
+    font-weight: 800;
     text-align: center;
-    padding: 20px;
 }
 
 .boxes {
     width: 650px;
     height: 500px;
-    margin: 50px auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -157,7 +224,7 @@ header nav a:hover {
 .box {
     width: 300px;
     height: 160px;
-    border: 1px solid rgb(56, 56, 56);
+    border: 1px solid rgb(55, 55, 55);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -168,28 +235,59 @@ header nav a:hover {
     width: 610px;
 }
 
-.box h1 {
+.box h2 {
     color: #f00;
     font-size: 20px;
 }
 
 .box p {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
     font-size: 14px;
     text-align: justify;
 }
 
-/* Fikirler Alanı*/
+/*Options Section*/
 
-#opinions {
+#opinions_sec {
     background-image: url(images/sec-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;    
+}
+
+.opinions_head {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 50px;
+    padding: 30px;
+}
+
+.opinions_head nav {
+    display: flex;
+    gap: 30px;
+}
+
+.opinions_head nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.5s, text-shadow 0.5s;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.opinions_head nav a:hover {
+    color: rgb(20, 20, 20);
+    text-shadow:2px 3px 5px #ff0, 0px 0px 10px #f00;
+    transition: 0.5s;
 }
 
 .opinions_text {
@@ -203,13 +301,11 @@ header nav a:hover {
 
 .opinions_text h1 {
     font-size: 60px;
-
 }
 
 .opinions_text p {
     font-size: 18px;
     text-align: justify;
-
 }
 
 .opinions_text button {
@@ -220,14 +316,12 @@ header nav a:hover {
     transition: color 0.5s;
     margin-top: 40px;
     width: 180px;
-
 }
 
 .opinions_text button:hover {
     color: #ff0;
     background-color: rgb(60, 60, 60);
     transition: 0.5s;
-
 }
 
 .cards {
@@ -268,48 +362,72 @@ header nav a:hover {
 
 @media (max-width: 1100px) {
 
-    header img {
-        width: 120px;
-    }
-
-    header {
+    .entry_head {
         padding: 15px;
     }
-
-    header nav {
+    
+    .entry_head img {
+        width: 120px;
+    }
+    
+    .entry_head nav {
         gap: 15px;
-
     }
-
-    header nav a {
-        color: black;
+    
+    .entry_head nav a {
+        color: #000;
+    }
+    
+    .entry_head nav a:hover {
+        text-shadow:2px 3px 5px rgb(50, 255, 0), 0px 0px 10px #f00;
+    }
+    
+    .entry_text {
+        margin: 80px auto;
+    }
+    
+    .entry_text h1 {   
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    .entry_text p {
         font-size: 20px;
-        font-weight: 800;
+        font-weight: 400;
     }
 
-    header nav a:hover {
-        text-shadow: 2px 3px 5px rgb(50, 255, 0), 0px 0px 10px #f00;
-    }
-
-    #about {
+    #about_sec {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-        padding: 20px;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .about_head {
+        padding: 15px;
+    }
+    
+    .about_head nav {
+        gap: 15px;
+    }
+    
+    .about_head nav a:hover {
+        text-shadow:2px 3px 5px rgb(50, 255, 0), 0px 0px 10px #f00;
     }
 
     .about_text {
         max-width: 100%;
     }
-
+    
     .about_text h1 {
         font-size: 25px;
         line-height: 30px;
         font-weight: 800;
         text-align: center;
     }
-
+    
     .about_text p {
         margin: 10px auto;
         text-align: justify;
@@ -318,18 +436,18 @@ header nav a:hover {
     .about_text p>span {
         border-bottom: 1px solid #f00;
     }
-
-    #about img {
-        width: 350px;
+    
+    #about_sec img {
+        max-width: 350px;
+        max-height: 350px;
     }
 
-    .heading h5 {
+    .battle_text h5 {
         font-size: 16px;
         padding: 30px 20px 20px 20px;
-
     }
-
-    .heading h1 {
+    
+    .battle_text h1 {
         font-size: 24px;
         padding: 10px;
     }
@@ -338,43 +456,55 @@ header nav a:hover {
         margin: 30px auto;
     }
 
-    #opinions {
+    #opinions_sec {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;        
+    }
+    
+    .opinions_head {
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding: 30px;
     }
-
-    .user {
-        gap: 10px;
-        margin-bottom: 10px;
+    
+    .opinions_head nav {
+        display: flex;
+        gap: 30px;
+    }    
+        
+    .opinions_head nav a:hover {
+        text-shadow:2px 3px 5px rgb(50, 255, 0), 0px 0px 10px #f00;
     }
-
-    .card:nth-child(2) {
-        align-self: center;
-    }
-
-    .cards {
-        gap: 5px;
-        align-items: center;
-    }
-
     .opinions_text {
         padding: 5px;
     }
-
+    
     .opinions_text h1 {
-        font-size: 20px;
-
+        font-size: 20px;    
     }
-
+    
     .opinions_text p {
-        font-size: 12px;
-
+        font-size: 12px;    
     }
-
+    
     .opinions_text button {
-        margin: 10px 0;
-
+        margin: 10px 0;    
+    }
+    
+    .cards {
+        gap: 5px;
+        align-items: center;
+    }    
+     
+    .card:nth-child(2) {
+        align-self: center;
+    }
+    
+    .user {
+        gap: 10px;
+        margin-bottom: 10px;
     }
 }
